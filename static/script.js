@@ -1,3 +1,6 @@
+const themeBtn = document.getElementById("theme-button");
+const toggleIcon = document.getElementById("theme-toggle");
+const body = document.body;
 let idleTimer;
 
 const idleMessages = [
@@ -64,10 +67,7 @@ async function sendMessage() {
   chatBox.innerHTML += `
   <div class="chat-row user">
     <img src="/static/img/you.jpg" class="avatar">
-    <div class="chat-bubble user-msg">${message.replace(
-      /\n/g,
-      "<br>"
-    )}</div>
+    <div class="chat-bubble user-msg">${message.replace(/\n/g, "<br>")}</div>
   </div>
 `;
 
@@ -138,3 +138,21 @@ window.onload = () => {
   document.getElementById("user-input").focus();
   resetIdleTimer();
 };
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-mode");
+  toggleIcon.classList.replace("fa-moon", "fa-sun");
+}
+
+// Toggle theme
+themeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+  const isDark = body.classList.contains("dark-mode");
+
+  toggleIcon.classList.replace(
+    isDark ? "fa-moon" : "fa-sun",
+    isDark ? "fa-sun" : "fa-moon"
+  );
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});
