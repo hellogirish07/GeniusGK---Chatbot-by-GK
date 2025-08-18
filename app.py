@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import google.generativeai as genai
 
 # Configure Gemini
-API_KEY = "ENTER YOUR API HERE"
+API_KEY = "ENTER YOUR API KEY HERE"
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-2.0-flash")
 chat_session = model.start_chat()
@@ -30,4 +30,5 @@ def chat():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
