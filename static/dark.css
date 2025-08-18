@@ -1,0 +1,92 @@
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(45deg, #111827, #1f2937, #000);
+    color: #f3f4f6;
+}
+
+/* Dark Mode Splash Screen */
+.dark-mode .splash-screen {
+    background: linear-gradient(45deg, #111827, #1f2937, #000);
+}
+
+.dark-mode .splash-logo img {
+    border-color: #3b82f6;
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.dark-mode .splash-title {
+    background: linear-gradient(90deg, #3b82f6, #ec4899, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark-mode .splash-subtitle {
+    color: #d1d5db;
+}
+
+.dark-mode .loading-dots span {
+    background: #3b82f6;
+}
+
+.dark-mode .chat-container {
+    background: rgba(17, 24, 39, 0.7);
+    /* dark translucent */
+}
+
+.dark-mode header {
+    /* background: linear-gradient(45deg, #1d4ed8, #db2777, #b91c1c); */
+    background: linear-gradient(45deg, #111827, #1f2937, #000);
+    color: #f9fafb;
+}
+
+.dark-mode .user-msg {
+    background: linear-gradient(90deg, #1d4ed8, #db2777, #b91c1c);
+    color: white;
+}
+
+.dark-mode .bot-msg {
+    background: linear-gradient(17deg, #1f2937 0%, #0ea5e9 100%);
+    color: #f3f4f6;
+}
+
+.dark-mode .bot-msg pre {
+    background: #0f172a;
+    color: #f1f5f9;
+}
+
+.dark-mode .copy-btn {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.dark-mode .copy-btn:hover {
+    background: #e5e7eb;
+}
+
+.dark-mode textarea#user-input {
+    background: #1f2937;
+    color: #f3f4f6;
+    border: 1px solid #374151;
+}
+
+.dark-mode .typing-indicator,
+.dark-mode .idle-msg {
+    color: #9ca3af;
+}
+
+.dark-mode .profile-card p {
+    color: #d1d5db;
+}
+
+.dark-mode .sidebar {
+    background-color: #111827;
+    color: #f3f4f6;
+    border-right: 1px solid #374151;
+}
+
+.dark-mode .section p, .dark-mode .section ul {
+    color: #d1d5db;
+}

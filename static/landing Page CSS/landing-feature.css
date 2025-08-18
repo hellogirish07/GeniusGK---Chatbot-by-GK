@@ -1,0 +1,98 @@
+
+/* Features */
+.features h2 {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* Side-by-side feature rows */
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-image {
+    width: 520px;
+    max-width: 45vw;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Dual theme images layout */
+.dual-theme-images {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.theme-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.theme-img {
+    width: 250px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.theme-label {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-text {
+    max-width: 560px;
+}
+
+.feature-text h3 {
+    color: #fff;
+    margin: 0 0 12px 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.feature-text p {
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    line-height: 1.7;
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeniusGK - AI Chatbot</title>
+
+    <!-- landing Page CSSs -->
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-page.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-navbar.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-Hero.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-about.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-Carousel.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-feature.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-contact.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-faq.css">
+    <link rel="stylesheet" href="/static/landing Page CSS/landing-footer.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="/static/img/bot-2.png" alt="GeniusGK Logo"> GeniusGK
+        </a>
+        <div class="navbar-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero" data-aos="fade-up">
+        <div class="hero-content">
+            <h1>Meet <span>GeniusGK</span> – Your AI Friend</h1>
+            <p>Seamless conversations, smart responses, and a touch of personality – all powered by Gemini AI.</p>
+            <a href="/chat" class="btn-primary">Start Chat</a>
+            <a href="#features" class="btn-primary">Explore Features</a>
+        </div>
+        <div class="hero-image">
+            <img src="/static/img/bot-2.png" alt="GeniusGK Chatbot">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="about-content">
+            <img class="logo" src="/static/img/bot-2.png" alt="GeniusGK Logo" >
+            <div class="contant">
+                <h2>About GeniusGK</h2>
+                <p>
+                    <strong>GeniusGK</strong> is your friendly, AI-powered chatbot built on the advanced <strong>Gemini API</strong> by Google. Whether you're a developer, student, or just curious, GeniusGK is here to help you code, learn, brainstorm, or simply have a fun chat!
+                </p>
+                <ul>
+                    <li><strong>Natural Conversations:</strong> Enjoy smooth, human-like interactions that adapt to your style and needs.</li>
+                    <li><strong>Smart Coding Help:</strong> Get instant code explanations, formatting, and even copy code blocks with a single click!</li>
+                    <li><strong>Modern & Interactive UI:</strong> Experience a sleek, responsive design with light/dark modes and playful idle messages to keep things lively.</li>
+                    <li><strong>Privacy First:</strong> Your chats are never stored. Everything stays between you and GeniusGK.</li>
+                    <li><strong>Powered by Flask & Gemini:</strong> Fast, secure, and always up-to-date with the latest AI tech.</li>
+                </ul>
+                <p >
+                    <strong>Ready to chat?</strong> Click <a href="/chat" class="btn-primary" style="padding:4px 14px; font-size:1em;">Start Chat</a> and let GeniusGK assist you!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots" id="screenshots" data-aos="fade-up">
+        <h2>Light & Dark Mode Previews</h2>
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-slide active" data-theme="light">
+                    <img src="/static/img/light-2.jpg" alt="Light Mode Screenshot">
+                    <div class="slide-caption">
+                        <h3>Light Mode</h3>
+                        <p>Clean and bright interface for daytime use</p>
+                    </div>
+                </div>
+                <div class="carousel-slide" data-theme="dark">
+                    <img src="/static/img/dark-2.jpg" alt="Dark Mode Screenshot">
+                    <div class="slide-caption">
+                        <h3>Dark Mode</h3>
+                        <p>Easy on the eyes for nighttime browsing</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" onclick="changeSlide(-1)" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <button class="carousel-btn next-btn" onclick="changeSlide(1)" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- <div class="theme-buttons">
+                <button class="theme-btn active" onclick="showTheme('light')">
+                    <i class="fas fa-sun"></i>
+                    Light Mode
+                </button>
+                <button class="theme-btn" onclick="showTheme('dark')">
+                    <i class="fas fa-moon"></i>
+                    Dark Mode
+                </button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features" >
+        <h2>Powerful Features</h2>
+        <div class="feature-list">
+            <div class="feature-item" data-aos="fade-left">
+                <div class="dual-theme-images">
+                    <div class="theme-preview">
+                        <a href="/static/img/light-2.jpg">
+                            <img src="/static/img/light-2.jpg" alt="Light mode preview" class="theme-img">
+                        </a>
+                        <span class="theme-label">Light Mode</span>
+                    </div>
+                    <div class="theme-preview">
+                        <a href="/static/img/dark-2.jpg">
+                            <img src="/static/img/dark-2.jpg" alt="Dark mode preview" class="theme-img">
+                        </a>
+                        <span class="theme-label">Dark Mode</span>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h3>Dark & Light Mode</h3>
+                    <p>Switch between elegant light and high‑contrast dark themes with a single click. Your preference
+                        is saved for future visits to keep the experience consistent across devices.</p>
+                </div>
+            </div>
+
+            <div class="feature-item reverse" data-aos="fade-right">
+                <a href="/static/img/typing.png">
+                    <img src="/static/img/typing.png" alt="Typing animation illustration" class="feature-image">
+                </a>
+                <div class="feature-text">
+                    <h3>Typing Animation</h3>
+                    <p>Subtle, realistic typing indicators provide real‑time feedback as responses are generated, making
+                        every interaction feel natural and engaging.</p>
+                </div>
+            </div>
+
+            <div class="feature-item" data-aos="fade-left">
+                <a href="/static/img/auto reply.png">
+                    <img src="/static/img/auto reply.png" alt="Idle auto‑reply illustration" class="feature-image">
+                </a>
+                <div class="feature-text">
+                    <h3>Idle Time Auto‑Reply</h3>
+                    <p>Playful, context‑aware prompts appear when you’re inactive for a while, inviting you to continue
+                        the conversation without losing your place.</p>
+                </div>
+            </div>
+
+            <div class="feature-item reverse" data-aos="fade-right">
+                <a href="/static/img/code.png">
+                    <img src="/static/img/code.png" alt="Code highlighting example" class="feature-image">
+                </a>
+                <div class="feature-text">
+                    <h3>Code Highlighting</h3>
+                    <p>Beautifully formatted code blocks with one‑click copy and multi‑language syntax highlighting make
+                        it easy to share, debug, and learn from the chat.</p>
+                </div>
+            </div>
+
+            <div class="feature-item" data-aos="fade-left">
+                <a href="/static/img/avatar.png">
+                    <img src="/static/img/avatar.png" alt="Custom avatars" class="feature-image">
+                </a>
+                <div class="feature-text">
+                    <h3>Avatars</h3>
+                    <p>Custom bot and user avatars add personality and clarity, so it’s always obvious who said what at
+                        a glance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Have feedback or questions? We'd love to hear from you!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Is GeniusGK free to use?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes, you can chat with GeniusGK without any cost for now.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Does it support multiple languages?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Currently, GeniusGK works best in English, but multi-language support is coming soon.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Do I need an account to use GeniusGK?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>No account is required at the moment. Just open the chat and start talking to GeniusGK.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Is my data private?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Your chats are not stored on our servers. Conversations are processed securely and kept private between you and GeniusGK.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Can I use GeniusGK on mobile?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. The interface is fully responsive and works great on phones and tablets.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Can I export or copy answers?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>You can copy any response, and code blocks include one‑click copy. Export options are planned for a future update.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Which browsers are supported?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Latest versions of Chrome, Edge, Firefox, and Safari are supported for the best experience.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>How do I report a bug or request a feature?</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Use the contact form in the Contact section below to send us details. We appreciate your feedback!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <img src="/static/img/bot-2.png" alt="GeniusGK Logo" class="footer-logo">
+                    <h3>GeniusGK</h3>
+                    <p>Your AI-powered chatbot friend</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#hero"><i class="fas fa-home"></i> Home</a>
+                    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="#features"><i class="fas fa-star"></i> Features</a>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="#" class="social-link portfolio">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest features</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 GeniusGK. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/static/landing-page.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
