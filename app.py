@@ -11,6 +11,10 @@ chat_session = model.start_chat()
 app = Flask(__name__)
 
 @app.route('/')
+def landing():
+    return render_template('laning-page.html')
+
+@app.route('/chat')
 def index():
     return render_template('index.html')
 
